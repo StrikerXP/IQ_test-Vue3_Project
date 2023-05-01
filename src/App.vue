@@ -1,7 +1,9 @@
 <!-- @format -->
 
 <template>
-    <nav><navbar /></nav>
+    <nav>
+        <navbar />
+    </nav>
     <main-page />
 </template>
 
@@ -15,6 +17,9 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+
 * {
     margin: 0;
     padding: 0;
