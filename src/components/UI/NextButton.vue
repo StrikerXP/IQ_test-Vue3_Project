@@ -1,14 +1,14 @@
 <!-- @format -->
 
 <template>
-    <button class="btn btn__start-test">
+    <button class="btn">
         <slot></slot>
     </button>
 </template>
 
 <script>
 export default {
-    name: "StartTestButton",
+    name: "NextButton",
 };
 </script>
 
@@ -25,11 +25,13 @@ export default {
     width: 189px;
     height: 41px;
     background-color: #ffc700ff;
-    border-radius: 20px;
+    border-radius: 50px;
     border: none;
 }
 
-.btn__start-test {
-    margin-top: 150px;
+.btn__transparent {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
 }
 </style>

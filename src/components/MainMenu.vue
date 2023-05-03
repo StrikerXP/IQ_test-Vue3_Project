@@ -15,13 +15,25 @@ export default {
         class="menu"
     >
         <div
-            class="menu__close"
+            class="menu__close-button"
             @click="$emit('close')"
         ></div>
         <div class="menu-links">
-            <router-link class="menu-links__link" to="/">Головна</router-link>
-            <router-link class="menu-links__link" to="/">Інформація про тест</router-link>
-            <router-link class="menu-links__link" to="/">Пройти тест</router-link>
+            <router-link
+                class="menu-links__link"
+                to="/"
+                >Головна</router-link
+            >
+            <router-link
+                class="menu-links__link"
+                to="/"
+                >Інформація про тест</router-link
+            >
+            <router-link
+                class="menu-links__link"
+                to="/"
+                >Пройти тест</router-link
+            >
         </div>
     </div>
 </template>
@@ -43,7 +55,7 @@ export default {
     z-index: 999;
 }
 
-.menu__close {
+.menu__close-button {
     display: flex;
     justify-content: center;
     align-self: flex-end;
@@ -56,8 +68,8 @@ export default {
     cursor: pointer;
 }
 
-.menu__close:before,
-.menu__close:after {
+.menu__close-button:before,
+.menu__close-button:after {
     position: absolute;
     content: " ";
     height: 28px;
@@ -65,11 +77,11 @@ export default {
     background-color: #ffc700;
 }
 
-.menu__close:before {
+.menu__close-button:before {
     transform: rotate(45deg);
 }
 
-.menu__close:after {
+.menu__close-button:after {
     transform: rotate(-45deg);
 }
 
@@ -86,6 +98,6 @@ export default {
 }
 
 .menu-links__link:last-child {
-    color: #F4CE0C;
+    color: #f4ce0c;
 }
 </style>

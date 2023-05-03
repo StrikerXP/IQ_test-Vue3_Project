@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-    <div class="navbar">
+    <nav class="navbar">
         <button
             class="menu-button"
             @click="showMainMenu = true"
@@ -24,7 +24,13 @@ export default {
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
         </button>
-    </div>
+        <img
+            class="img-responsive"
+            src="../images/brain.png"
+            alt=""
+        />
+        <h1 class="title font__yeseva-one font__sz-12 font__uppercase color__yellow">тест на определение IQ</h1>
+    </nav>
     <main-menu
         :show="showMainMenu"
         @close="showMainMenu = false"
@@ -33,11 +39,13 @@ export default {
 
 <style scoped>
 .navbar {
-    position: sticky;
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
     background: #181818;
-    padding-top: 17px;
-    padding-bottom: 13px;
-    padding-left: 15px;
 }
 
 .menu-button {
@@ -55,5 +63,13 @@ export default {
     width: 24px;
     height: 3px;
     background-color: #625f5f;
+}
+
+.title {
+    padding-left: 5%;
+}
+
+.img-responsive {
+    max-height: 47px;
 }
 </style>
